@@ -8,6 +8,7 @@ let sliderSymbol = document.getElementById("symbolRange");
 let outputSymbol = document.getElementById("symbolValue");
 let para = document.getElementById("password")
 let button = document.getElementById("generate-password")
+let copy = document.getElementById("copy-button")
 outputLowercase.innerText = sliderLowercase.value;
 outputUppercase.innerText = sliderUppercase.value;
 outputNumber.innerText = sliderNumber.value;
@@ -78,14 +79,34 @@ function generateSymbol() {
         passwordArray.push(symbol)
     }
 }
+
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+
+function copyPassword() {
+    let copyText = document.getElementById("password");
+    navigator.clipboard.writeText(copyText.innerText);
+}
+
 function generatePassword() {
     generateUppercase()
     generateLowercase()
     generateNumber()
     generateSymbol()
+    shuffle(passwordArray)
+    para.innerText = passwordArray.join("")
 }
 
 button.addEventListener("click", () => {
     generatePassword()
-    para.innerText = passwordArray.join("")
+    passwordArray = []
+})
+
+copy.addEventListener("click", () => {
+    copyPassword()
 })
