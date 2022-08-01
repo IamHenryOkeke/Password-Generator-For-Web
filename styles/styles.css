@@ -31,6 +31,7 @@ header > h3, p{
 
 section{
     margin: 0 auto;
+    width: 80%;
 }
 
 .slider-container{
@@ -40,6 +41,13 @@ section{
     margin-bottom: 20px;
 }
 
+section>.password>#password{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+}
 .slider-container>.slidecontainer>h4{
     font-size: 25px;
 }
@@ -95,5 +103,9 @@ footer{
         padding: 5px;
         margin: 8px;
     }
+    section{
+        max-width: 100%;
+    }
+
     
   }
