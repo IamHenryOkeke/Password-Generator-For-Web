@@ -91,6 +91,7 @@ function shuffle(array) {
 function copyPassword() {
     let copyText = document.getElementById("password");
     navigator.clipboard.writeText(copyText.innerText);
+    alert("Copied password: " + copyText.innerText)
 }
 
 function generatePassword() {
