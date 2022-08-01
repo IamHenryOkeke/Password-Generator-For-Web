@@ -17,12 +17,12 @@ body{
 
 header>h1{
     padding: 20px;
-    font-size: 3rem;
+    font-size: 50px;
     color: cornflowerblue;
 }
 
 header > h3, p{
-    font-size: 1.5rem;
+    font-size: 22px;
 }
 
 
@@ -39,7 +39,7 @@ section{
 }
 
 .slider-container>.slidecontainer>h4{
-    font-size: 1.5rem;
+    font-size: 25px;
 }
 
 .slider-container>.slidecontainer>input{
