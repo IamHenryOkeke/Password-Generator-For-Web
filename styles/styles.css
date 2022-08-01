@@ -16,7 +16,6 @@ body{
 }
 
 header>h1{
-    padding: 20px;
     font-size: 50px;
     color: cornflowerblue;
 }
@@ -81,3 +80,9 @@ footer{
     font-size: 20px;
     color: white;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
