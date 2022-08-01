@@ -110,6 +110,7 @@ footer{
         max-width: 80%;
     }
     #password{
+        font-size: 14px;
         word-wrap: break-word;
     }
   }
