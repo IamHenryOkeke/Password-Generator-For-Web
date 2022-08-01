@@ -82,7 +82,7 @@ footer{
 }
 
 @media only screen and (max-width: 600px) {
-    body { 
+    html { 
         background: url(https://mobirise.com/blocks/assets/images/jumbotron.jpg) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
