@@ -43,9 +43,6 @@ section{
 
 section>.password>#password{
     padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     word-wrap: break-word;
 }
 .slider-container>.slidecontainer>h4{
@@ -106,6 +103,13 @@ footer{
     section{
         max-width: 100%;
     }
-
-    
+    section>.password{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+    }
+    #password{
+        word-wrap: break-word;
+    }
   }
