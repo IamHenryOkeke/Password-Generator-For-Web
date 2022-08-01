@@ -96,7 +96,8 @@ footer{
         cursor: pointer;
         text-align: center;
         font-size: 5px;
-        padding: 5px;;
+        padding: 5px;
+        margin: 8px;
     }
     
   }
