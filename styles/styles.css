@@ -83,6 +83,9 @@ footer{
 
 @media only screen and (max-width: 600px) {
     body {
-      background-color: lightblue;
+        background: url(https://mobirise.com/blocks/assets/images/jumbotron.jpg);
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:center;
     }
   }
